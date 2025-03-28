@@ -1,0 +1,360 @@
+type: collection.insomnia.rest/5.0
+name: bibliotecaAtiv
+meta:
+  id: wrk_4584998444e04d50bcf513a9b76a6d09
+  created: 1743177839423
+  modified: 1743177839423
+collection:
+  - name: Livro
+    meta:
+      id: fld_29b81bf6c3e54602879f9be5848f7ce7
+      created: 1743178163403
+      modified: 1743178163403
+      sortKey: -1743178163403
+    children:
+      - url: http://localhost:3001/livros
+        name: CREATE
+        meta:
+          id: req_8d2b72be457a4f4c87344f042342e7b3
+          created: 1743178167478
+          modified: 1743180588294
+          isPrivate: false
+          sortKey: -1743178891029
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"titulo":"romeu e julieta",
+            	"autor":"carlos",
+            	"prateleira":"Prateleira c"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/livros
+        name: READ
+        meta:
+          id: req_aaf54870cb0b44f880663e59ae9336f4
+          created: 1743178852628
+          modified: 1743178936970
+          isPrivate: false
+          sortKey: -1743178890979
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/livros/3
+        name: UPDATE
+        meta:
+          id: req_bebb3800b9cc421d8b36d8b02938bd1b
+          created: 1743178890829
+          modified: 1743180317459
+          isPrivate: false
+          sortKey: -1743178890954
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"titulo":"Joao e Mariaa",
+            	"autor":"Matheus",
+            	"prateleira":"Prateleira A"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/livros/5
+        name: DELETE
+        meta:
+          id: req_9f8a11ccf2eb41dfbd41c736aad68256
+          created: 1743178907921
+          modified: 1743180323213
+          isPrivate: false
+          sortKey: -1743178890929
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Aluno
+    meta:
+      id: fld_61a14ecff31a4388a2bb286dbdcc1ace
+      created: 1743180598979
+      modified: 1743180598979
+      sortKey: -1742397366640
+    children:
+      - url: http://localhost:3001/alunos
+        name: CREATE
+        meta:
+          id: req_8878b723aaf243c5ab004a0a13bba513
+          created: 1743180598980
+          modified: 1743180834106
+          isPrivate: false
+          sortKey: -1743178891029
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"ra": "5",
+            	"nome":"kaue",
+            	"telefone":"45854951"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/alunos
+        name: READ
+        meta:
+          id: req_eb52269b11de401ca652f2e1a6a95a93
+          created: 1743180598982
+          modified: 1743180743303
+          isPrivate: false
+          sortKey: -1743178890979
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/livros/3
+        name: UPDATE
+        meta:
+          id: req_d330d2d2c138474f843c4b17b2ca257b
+          created: 1743180598984
+          modified: 1743180598984
+          isPrivate: false
+          sortKey: -1743178890954
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"titulo":"Joao e Mariaa",
+            	"autor":"Matheus",
+            	"prateleira":"Prateleira A"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/livros/5
+        name: DELETE
+        meta:
+          id: req_34a5807d8dd94bf99040c0e140a3e029
+          created: 1743180598986
+          modified: 1743180598986
+          isPrivate: false
+          sortKey: -1743178890929
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/alunos/4
+        name: New Request
+        meta:
+          id: req_ca9eb840ff8445ddb459ddb010c749b4
+          created: 1743182075806
+          modified: 1743189287685
+          isPrivate: false
+          sortKey: -1743182075806
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Emprestimo
+    meta:
+      id: fld_a03e715fb4d74e95bae47fb0e7892e4f
+      created: 1743181030328
+      modified: 1743181030328
+      sortKey: -1742006968258.5
+    children:
+      - url: http://localhost:3001/emprestimos
+        name: CREATE
+        meta:
+          id: req_f83de30315b242e6861d124df06fe68d
+          created: 1743181030330
+          modified: 1743189250508
+          isPrivate: false
+          sortKey: -1743178891029
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"raAluno": "1",
+            	"idLivro":14,
+            	"retirada":"2025-03-10T00:00:00.000Z",
+            	"devolucao":"2025-03-14T00:00:00.000Z"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/emprestimos
+        name: READ
+        meta:
+          id: req_51d58b1184414c64a20cb1c621451e1d
+          created: 1743181030332
+          modified: 1743181044342
+          isPrivate: false
+          sortKey: -1743178890979
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/emprestimos/3
+        name: UPDATE
+        meta:
+          id: req_6f30b3abb5284a0f8914eb816152c77f
+          created: 1743181030333
+          modified: 1743189143802
+          isPrivate: false
+          sortKey: -1743178890954
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"devolucao":"2025-03-18T00:00:00.000Z"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/emprestimos/15
+        name: DELETE
+        meta:
+          id: req_2520b27b8d0046d08e7c9d465501c28b
+          created: 1743181030334
+          modified: 1743189265812
+          isPrivate: false
+          sortKey: -1743178890929
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_2c9c96fc96c3a09e88e934da83f32221055f1c9d
+    created: 1743177839431
+    modified: 1743177839431
+environments:
+  name: Base Environment
+  meta:
+    id: env_2c9c96fc96c3a09e88e934da83f32221055f1c9d
+    created: 1743177839427
+    modified: 1743177839427
+    isPrivate: false
